@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "No1se Side",
+    "version": "1.0",
+    "description": "Add videos to No1se Side from YouTube",
+    "permissions": [
+      "activeTab",
+      "https://www.youtube.com/*",
+      "webRequest",
+      "webRequestBlocking",
+      "storage",
+      "notifications"
+    ],
+    "web_accessible_resources": [
+        "style.css"
+      ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.youtube.com/*"
+        ],
+        "js": [
+          "content.js"
+        ],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
