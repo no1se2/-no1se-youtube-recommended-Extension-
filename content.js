@@ -1,12 +1,3 @@
-function loadCSS(file) {
-    const link = document.createElement('link');
-    link.href = chrome.runtime.getURL(file);
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-  }
-  
-  loadCSS('style.css');
-
 
 function addButton() {
     const container = document.querySelector('.ytp-left-controls');
@@ -39,7 +30,7 @@ function addButton() {
     //CSS----------------------------------------------------------------------------------------------
     button.addEventListener('click', function() {
       const videoUrl = window.location.href;
-      const discordUrl = 'https://discord.com/api/webhooks/1083823749113069639/_pcWPOPKC-5j-dKMpsoWpI7OgOs5eNJdyAN0uHdn6SNEDi5Q0woOpwy5Xwi5zr-XuX5z';
+      const discordUrl = 'DISCORD_WEBHOOK_HERE';
       
       const data = {
         content: videoUrl,
